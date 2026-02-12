@@ -1,73 +1,78 @@
-# React + TypeScript + Vite
+# 🔥 SparkLink - Modern Link-in-Bio Builder
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+<div align="center">
+  
+  🚀 **Live Demo**: [https://sparklink.vercel.app](https://sparklink.vercel.app)
+  
+  [![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)](https://reactjs.org/)
+  [![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
+  [![Supabase](https://img.shields.io/badge/Supabase-3ECF8E?style=for-the-badge&logo=supabase&logoColor=white)](https://supabase.com/)
+  [![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)](https://tailwindcss.com/)
+  [![Vercel](https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white)](https://vercel.com/)
 
-Currently, two official plugins are available:
+  <br />
+  <img src="https://via.placeholder.com/800x400.png?text=SparkLink+Dashboard" alt="SparkLink Dashboard" width="80%" />
+  <br />
+  <em>✨ Beautiful, customizable, and secure link-in-bio pages in minutes</em>
+</div>
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## React Compiler
+## 📖 About
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+**SparkLink** is a modern alternative to Linktree and Carrd. Create a personalized landing page with all your important links, customize the look with stunning glass morphism themes, and share your unique URL - all in under 60 seconds.
 
-## Expanding the ESLint configuration
+Built for creators, professionals, and businesses who want a beautiful digital presence without the bloat.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+---
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## ✨ Features
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+| | Feature | Description |
+|---|--------|-------------|
+| 🔐 | **Secure Authentication** | Email/password + Magic links with Supabase |
+| 🎨 | **Beautiful Themes** | 4+ preset themes with glass morphism effects |
+| 🖱️ | **Drag & Drop** | Reorder links instantly with smooth animations |
+| 📱 | **Mobile-First** | Perfect on every device, from phones to desktops |
+| 🖼️ | **Avatar Upload** | Custom profile pictures with Supabase Storage |
+| 🔗 | **Unlimited Links** | Add as many links as you need |
+| 🌙 | **Dark Mode** | Automatic system preference detection |
+| 📬 | **Password Reset** | Complete recovery flow with email |
+| 🎯 | **Public Profiles** | Share your page at `/u/yourusername` |
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+---
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## 🛠️ Tech Stack
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+**Frontend**
+- ⚛️ React 18 + TypeScript
+- ⚡ Vite
+- 🎨 Tailwind CSS + Glass Morphism
+- 🎭 Framer Motion
+- 📦 TanStack Query
+- 🎣 React Hook Form + Zod
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+**Backend**
+- 🔥 Supabase (Auth, PostgreSQL, Storage)
+- 🔒 Row Level Security (RLS)
+- 📤 Real-time subscriptions
+
+**DevOps**
+- 🐙 GitHub
+- ▲ Vercel
+- 🌐 Custom domain ready
+
+---
+
+## 🚀 Quick Start
+
+### Prerequisites
+- Node.js 18+
+- npm or yarn
+- Supabase account (free)
+
+### 1. Clone & Install
+```bash
+git clone https://github.com/yourusername/sparklink.git
+cd sparklink
+npm install
