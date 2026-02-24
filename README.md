@@ -71,7 +71,7 @@ Built for creators, professionals, and businesses who want a beautiful digital p
 - npm or yarn
 - Supabase account (free)
 
-### 1. Clone & Install
+### Clone & Install
 ```bash
 git clone https://github.com/yourusername/sparklink.git
 cd sparklink
